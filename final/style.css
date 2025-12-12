@@ -1,10 +1,9 @@
  body {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     background-color: rgb(253, 239, 213);
  }
  .navbar {
-
     background-color: rgb(247, 208, 136);
     height: 80px;
     display: flex;
@@ -34,9 +33,15 @@ h2 {
     margin: auto; margin-bottom: 10px;margin-top: 20px;
     border: 2px solid black; border-radius: 20px;
     justify-content: space-around;
-    width: 80%; height: 150px;
+    width: 80%; height: auto;
     align-items: center;
     background-color: white;
+}
+.product-container:last-of-type {
+  margin-bottom: 100px;
+}
+.location-container:last-of-type {
+  margin-bottom: 100px;
 }
 .location-container {
     display: flex;
@@ -50,6 +55,10 @@ h2 {
 .product-img img {
     height: 100px; width: 100px;
     margin: 10px;
+}
+.product-img-1 img {
+    height: 100px; width: 100px;
+    display: none;
 }
 .product-info {
     display: flex;
@@ -71,7 +80,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     width: 95%;
-    
 }
 button {
     padding: 5px;
@@ -106,13 +114,16 @@ button a{
     height: 80px;
     display: flex;
     align-items: center; 
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
     margin-top: 20px;
+    position: fixed;
+    bottom: 0px;
  }
  .location {
     font-size: 22px;
  }
- .location a{
+ .location a {
     text-decoration: none;
     color: black;
  }
@@ -120,12 +131,10 @@ button a{
     .product-container {
         flex-direction: column;
         height: auto;
+        padding: 10px;
     }
-    .top-row, .middle-row {
+    .top-row, .middle-row  {
         flex-direction: column;
         align-items: flex-start;
-    }
-    .product-img img {
-        height: 80px; width: 80px;
     }
  }
